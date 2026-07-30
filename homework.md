@@ -1,0 +1,7 @@
+- Create a respository
+- Initialize the repository
+- Know about Package.json, packageLock.json
+- Install Express.js and create a sercer
+- Listen to port 7777
+- Create Request Handlers /test ...... 
+- Install nodemon and update the scrips inside package.json
