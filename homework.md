@@ -5,3 +5,17 @@
 - Listen to port 7777
 - Create Request Handlers /test ...... 
 - Install nodemon and update the scrips inside package.json
+
+- Createa a Git Repository
+- Add git ignore file
+- Push the changes to remote repository from the local
+- Sequence of code matters (routing)
+- Install Postman and make the workspace > Collection
+- Write logic to handle GET, POST, PATCH, DELETE api calls and test them using postman
+
+- Handling multiple route handlers
+- Use of Next function
+- What is middleware and why do we need it?
+- How express.js handles requests behind the scenes
+- Create a middleware folder and keep authMiddleware and userMiddleware inside them
+- Use the (err, req, res, next) - learn to use the err also here
