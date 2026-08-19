@@ -19,3 +19,14 @@
 - How express.js handles requests behind the scenes
 - Create a middleware folder and keep authMiddleware and userMiddleware inside them
 - Use the (err, req, res, next) - learn to use the err also here
+
+- Create a free cluster on mongoDB official website(mongo atlas)
+- Install mongoose library
+- Connect your application with Database
+- Call the connectDB function and connevct to database before starting application
+
+
+
+
+
+<!-- mongodb+srv://NamasteNodeJS:8CYsGxzghiEwgFC1@cluster0.ucsxjik.mongodb.net/ -->
