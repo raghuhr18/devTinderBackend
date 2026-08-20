@@ -23,7 +23,11 @@
 - Create a free cluster on mongoDB official website(mongo atlas)
 - Install mongoose library
 - Connect your application with Database
-- Call the connectDB function and connevct to database before starting application
+- Call the connectDB function and connect to database before starting application
+- Use mongoose, Create userSchema and user model
+- Create /signup API and add the data to database
+- Push some data using API calls from Postman
+- always use try and catch blocks when you're communicating with the database
 
 
 
