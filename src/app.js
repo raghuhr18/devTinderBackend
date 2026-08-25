@@ -4,23 +4,20 @@ const connectDB = require("./config/database");
 const User = require("./models/User");
 
 const app = express();
+app.use(express.json())
 
 // app.use("/admin", adminAuth);
 // app.use("/user", userAuth);
-
 app.post("/signup", async (req, res) => {
-  const user = new User({
-    firstName: "Virat",
-    lastName: "Kohli",
-    email: "virat@kohli.com",
-    password: "password123",
-  });
-try {
-  await user.save();
-  res.send("User Created Successfully");
-} catch (error) {
-  res.status(500).send("Error creating user");
-}
+
+  const user = new User(req.body);
+
+  try {
+    await user.save();
+    res.send("User Created Successfully");
+  } catch (error) {
+    res.status(500).send("Error creating user");
+  }
 });
 
 connectDB()

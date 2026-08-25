@@ -29,8 +29,9 @@
 - Push some data using API calls from Postman
 - always use try and catch blocks when you're communicating with the database
 
-
-
+- Findout the differences between JSOna nd Javascript Objects
+- Add the express.json() middleware to your app
+- Make your signup API dynamic to receive the data and save it into the database
 
 
 <!-- mongodb+srv://NamasteNodeJS:8CYsGxzghiEwgFC1@cluster0.ucsxjik.mongodb.net/ -->
