@@ -41,6 +41,11 @@
 - Explore the schema type options from the documentation
 - add required, unique, min, minLength, trim etc
 - add default value and create a custom validtaions for gender and improve the user schema by putting all the appropriate validations
+- Add Timestamps to the userSchema
+- Add the API level validations for the patch and post API's
+- Limit the number of skills - (add the custom validation)
+- Import the validator npm package...and add the validation to the email, PhotoURL etc...(Custom Validation)
+- Explore the Validator library functionsand use them use them for (passwords, email, photoURL's)
 
 
 

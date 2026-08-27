@@ -55,11 +55,22 @@ app.delete("/delete", async (req, res) => {
   }
 })
 
-app.patch("/user", async (req, res) => {
-  const userId = req.body.id;
+app.patch("/user/:id", async (req, res) => {
+  const userId = req.params.id;
   const updateData = req.body;
+  const ALLOWED_UPDATES = ["age", "gender", "photoURL", "about", "skills"];
 
   try {
+  const isAllowedUpdate = Object.keys(updateData).every((update) =>
+    ALLOWED_UPDATES.includes(update)
+  );
+
+  if (!isAllowedUpdate) {
+    return res.status(400).send("Invalid update fields");
+  }
+  if (updateData.skills.length > 5) {
+    return res.status(400).send("Skills cannot exceed 5");
+  }
     const updatedUser = await User.findByIdAndUpdate(userId, updateData, { runValidators: true });
     if (!updatedUser) {
       return res.status(404).send("User not found");
