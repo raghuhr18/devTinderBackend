@@ -36,8 +36,11 @@
 - By passing empty object inside the find(), get all the userswhich are therein the database
 - Built 2 API's /user - gets the particular user from the databse. -/feed - gets you all the users from the database
 - Create a deleteUser API and delete the user from the database
-- 
+- Create PATCH method in the API and update the user details
 
+- Explore the schema type options from the documentation
+- add required, unique, min, minLength, trim etc
+- add default value and create a custom validtaions for gender and improve the user schema by putting all the appropriate validations
 
 
 
