@@ -32,6 +32,13 @@
 - Findout the differences between JSOna nd Javascript Objects
 - Add the express.json() middleware to your app
 - Make your signup API dynamic to receive the data and save it into the database
+- By using the get method and get the user from the database User.find(email)- use try, catch block 
+- By passing empty object inside the find(), get all the userswhich are therein the database
+- Built 2 API's /user - gets the particular user from the databse. -/feed - gets you all the users from the database
+- Create a deleteUser API and delete the user from the database
+- 
+
+
 
 
 <!-- mongodb+srv://NamasteNodeJS:8CYsGxzghiEwgFC1@cluster0.ucsxjik.mongodb.net/ -->
