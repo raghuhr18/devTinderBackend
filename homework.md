@@ -47,6 +47,14 @@
 - Import the validator npm package...and add the validation to the email, PhotoURL etc...(Custom Validation)
 - Explore the Validator library functionsand use them use them for (passwords, email, photoURL's)
 
-
-
+- Create a Separate file in utile folder and name it as validtion.js
+- Add all the validations for the /signUp method and call it inside try by passing req.body into it
+- To save the passoword into the database, It needs to be hashed...
+- Install the bcrypt library, hash the password by adding the salts and save it....
+- Explicitly create a new user instance and then save it - (best way to save the user) - which should include your hashedPassword
+- Create a /login API
+- step1: Get the entered email and password from the request.body
+- step2: Check whether the entered email i spresent in the DB  - await User.findOne({ email: email })
+- step3: Now compare the passwords - await bcrypt.compare(password, user.password);
+- step4: If there is a match - only then allow the user to login else Throw Error
 <!-- mongodb+srv://NamasteNodeJS:8CYsGxzghiEwgFC1@cluster0.ucsxjik.mongodb.net/ -->
